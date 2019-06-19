@@ -55,6 +55,8 @@ class _DialogState extends State<DialogPage> {
     // 调用方法
     showDialog<void>(
       context: context,
+      // 点击遮罩层是否可以关闭弹窗
+      barrierDismissible: true,
       // 构造器
       builder: (BuildContext context) => AlertDialog(
         title: Text('TITLE'),

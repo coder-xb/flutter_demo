@@ -32,7 +32,11 @@ class _ConstrainedBoxState extends State<ConstrainedBoxPage> {
             // 添加一个指定大小的盒子 固定其最大最小的宽高
             ConstrainedBox(
               constraints: BoxConstraints(
-                  minWidth: 100, minHeight: 20, maxHeight: 60, maxWidth: 200),
+                minWidth: 100,
+                minHeight: 20,
+                maxHeight: 60,
+                maxWidth: 200,
+              ),
               child: Container(
                 width: 250,
                 height: 60,
