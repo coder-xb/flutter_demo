@@ -11,6 +11,7 @@ class DrawerState extends State<AppDrawer> {
   static var _packageInfo = PackageInfo();
   static var _isHome = true;
   static final _panels = [
+    // Widgets
     {
       'title': 'Widgets',
       'expanded': false,
@@ -321,6 +322,11 @@ class DrawerState extends State<AppDrawer> {
           'builder': (BuildContext context) => StackPage()
         },
         {
+          'title': 'Stepper',
+          'selected': false,
+          'builder': (BuildContext context) => StepperPage()
+        },
+        {
           'title': 'Switch_AnimatedSwitcher',
           'selected': false,
           'builder': (BuildContext context) => AnimatedSwitcherPage()
@@ -362,6 +368,7 @@ class DrawerState extends State<AppDrawer> {
         },
       ]
     },
+    // Layout
     {
       'title': 'Layout',
       'expanded': false,
@@ -423,6 +430,7 @@ class DrawerState extends State<AppDrawer> {
         },
       ]
     },
+    // Navigation
     {
       'title': 'Navigation',
       'expanded': false,
@@ -464,6 +472,7 @@ class DrawerState extends State<AppDrawer> {
         }
       ]
     },
+    // Ineraction
     {
       'title': 'Ineraction',
       'expanded': false,
@@ -509,15 +518,193 @@ class DrawerState extends State<AppDrawer> {
           'builder': (BuildContext context) => RefreshIndicatorPage()
         },
         {
+          'title': 'Silver',
+          'selected': false,
+          'builder': (BuildContext context) => SliverPage()
+        },
+        {
           'title': 'Silver App Bar',
           'selected': false,
-          'builder': (BuildContext context) => SilverAppBarScrollPage()
+          'builder': (BuildContext context) => SliverAppBarScrollPage()
         },
         {
           'title': 'Animated List',
           'selected': false,
           'builder': (BuildContext context) => AnimateListPage()
         },
+      ]
+    },
+    // Advanced
+    {
+      'title': 'Advanced',
+      'expanded': false,
+      'items': [
+        {
+          'title': 'Animation',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationPage()
+        },
+        {
+          'title': 'Animation_Basic',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationBasic()
+        },
+        {
+          'title': 'Animation_Countdown',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationCountdown()
+        },
+        {
+          'title': 'Animation_Delayed',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationDelayed()
+        },
+        {
+          'title': 'Animation_Parent',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationParent()
+        },
+        {
+          'title': 'Animation_Transform',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationTransform()
+        },
+        {
+          'title': 'Animation_Widget',
+          'selected': false,
+          'builder': (BuildContext context) => AnimationWidget()
+        },
+        {
+          'title': 'AnimatedContainer',
+          'selected': false,
+          'builder': (BuildContext context) => AnimatedContainerPage()
+        },
+        {
+          'title': 'AnimatedCrossFade',
+          'selected': false,
+          'builder': (BuildContext context) => AnimatedCrossFadePage()
+        },
+        {
+          'title': 'BLoC',
+          'selected': false,
+          'builder': (BuildContext context) => BlocPage()
+        },
+        {
+          'title': 'RxDart [Simple]',
+          'selected': false,
+          'builder': (BuildContext context) => RxDartSimple()
+        },
+        {
+          'title': 'RxDart BLoC',
+          'selected': false,
+          'builder': (BuildContext context) => RxDartBlocPage()
+        },
+      ]
+    },
+    {
+      'title': 'UI Demos',
+      'expanded': false,
+      'items': [
+        {
+          'title': 'BackToTop',
+          'selected': false,
+          'builder': (BuildContext context) => BackToTop()
+        },
+        {
+          'title': 'BottomNavigationNormal',
+          'selected': false,
+          'builder': (BuildContext context) => BottomNavigationNormal()
+        },
+        {
+          'title': 'BottomNavigationKeepAlive',
+          'selected': false,
+          'builder': (BuildContext context) => BottomNavigationKeep()
+        },
+        {
+          'title': 'ChatPage',
+          'selected': false,
+          'builder': (BuildContext context) => ChatPage()
+        },
+        {
+          'title': 'CustomClipper',
+          'selected': false,
+          'builder': (BuildContext context) => CustomClipperPage()
+        },
+        {
+          'title': 'CustomRouter',
+          'selected': false,
+          'builder': (BuildContext context) => CustomRouterPage()
+        },
+        {
+          'title': 'Draggable',
+          'selected': false,
+          'builder': (BuildContext context) => DraggablePage()
+        },
+        {
+          'title': 'ExpansionTile',
+          'selected': false,
+          'builder': (BuildContext context) => ExpansionTileDemo()
+        },
+        {
+          'title': 'ExpansionPanelList',
+          'selected': false,
+          'builder': (BuildContext context) => ExpansionPanelListDemo()
+        },
+        {
+          'title': 'FormPopScpoePage',
+          'selected': false,
+          'builder': (BuildContext context) => FormPopScpoePage()
+        },
+        {
+          'title': 'FrostedGlass',
+          'selected': false,
+          'builder': (BuildContext context) => FrostedGlass()
+        },
+        {
+          'title': 'ReorderableListView',
+          'selected': false,
+          'builder': (BuildContext context) => ReorderableListViewPage()
+        },
+        {
+          'title': 'PullDownRefresh',
+          'selected': false,
+          'builder': (BuildContext context) => PullDownPage()
+        },
+        {
+          'title': 'PullUpLoading',
+          'selected': false,
+          'builder': (BuildContext context) => PullUpPage()
+        },
+        {
+          'title': 'SearchBar',
+          'selected': false,
+          'builder': (BuildContext context) => SearchBar()
+        },
+        {
+          'title': 'SliverPgae',
+          'selected': false,
+          'builder': (BuildContext context) => SliverPgae()
+        },
+        {
+          'title': 'TextFieldsFocus',
+          'selected': false,
+          'builder': (BuildContext context) => TextFieldsFocus()
+        },
+        {
+          'title': 'WidgetToImage',
+          'selected': false,
+          'builder': (BuildContext context) => WidgetToImage()
+        },
+        {
+          'title': 'WillPopScpoe',
+          'selected': false,
+          'builder': (BuildContext context) => WillPopScpoePage()
+        },
+        {
+          'title': 'WrapPhoto',
+          'selected': false,
+          'builder': (BuildContext context) => WrapPhoto()
+        }
       ]
     }
   ];
@@ -588,6 +775,7 @@ class DrawerState extends State<AppDrawer> {
               image: DecorationImage(
                 image: AssetImage('assets/images/lake.jpg'),
                 fit: BoxFit.cover,
+
                 /// 背景图遮罩蒙版 ColorFilter.mode(Color, BlenMode)
                 /// BlendMode.* 图像混合模式
                 /// BlendMode.clear       清除所有内容

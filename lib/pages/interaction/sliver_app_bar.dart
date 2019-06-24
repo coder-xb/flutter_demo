@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../widgets/index.dart';
 
-class SilverAppBarScrollPage extends StatelessWidget {
+class SliverAppBarScrollPage extends StatelessWidget {
   static final _tabs = ['Tab1', 'Tab2', 'Tab3'];
 
   @override

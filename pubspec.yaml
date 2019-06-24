@@ -9,6 +9,7 @@ dependencies:
   package_info: ^0.3.2
   image_picker: ^0.4.1
   fluttertoast: ^2.2.2
+  rxdart: ^0.22.0
 
 dev_dependencies:
   flutter_test:
