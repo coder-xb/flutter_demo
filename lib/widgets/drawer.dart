@@ -606,6 +606,11 @@ class DrawerState extends State<AppDrawer> {
       'expanded': false,
       'items': [
         {
+          'title': 'AudioDemo',
+          'selected': false,
+          'builder': (BuildContext context) => AudioPage()
+        },
+        {
           'title': 'BackToTop',
           'selected': false,
           'builder': (BuildContext context) => BackToTop()
@@ -661,10 +666,25 @@ class DrawerState extends State<AppDrawer> {
           'builder': (BuildContext context) => FrostedGlass()
         },
         {
+          'title': 'Hero',
+          'selected': false,
+          'builder': (BuildContext context) => HeroDemoPage()
+        },
+        {
+          'title': 'HideBottomBar',
+          'selected': false,
+          'builder': (BuildContext context) => HideBottomBarPage()
+        },
+        {
           'title': 'ReorderableListView',
           'selected': false,
           'builder': (BuildContext context) => ReorderableListViewPage()
         },
+        /*{
+          'title': 'RotateButton',
+          'selected': false,
+          'builder': (BuildContext context) => RotateButtonPage()
+        },*/
         {
           'title': 'PullDownRefresh',
           'selected': false,
@@ -706,7 +726,7 @@ class DrawerState extends State<AppDrawer> {
           'builder': (BuildContext context) => WrapPhoto()
         }
       ]
-    }
+    },
   ];
 
   @override
@@ -886,6 +906,10 @@ class DrawerState extends State<AppDrawer> {
                   )
                   .values
                   .toList()),
+          Divider(),
+          ListTile(
+            subtitle: Text('本项目部分Demo摘自：https://github.com/OpenFlutter/Flutter-Notebook'),
+          ),
           Divider(),
           AboutListTile(
             applicationName: _packageInfo.appName,

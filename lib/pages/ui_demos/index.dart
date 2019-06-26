@@ -11,3 +11,7 @@ export './custom_clipper.dart';
 export './reorderble_listview.dart';
 export './back_to_top.dart';
 export './chat.dart';
+export './hide_bottom_bar.dart';
+export './hero.dart';
+export './audio.dart';
+export './rotate_button.dart';
