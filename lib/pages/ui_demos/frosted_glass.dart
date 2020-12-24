@@ -19,7 +19,7 @@ class FrostedGlass extends StatelessWidget {
           ),
           Center(
             child: ClipRect(
-              /// 使用BackdropFilter实现高斯模糊小哥哥，且子组件需要设置Opacity
+              /// 使用BackdropFilter实现高斯模糊效果，且子组件需要设置Opacity
               /// 使用这个组件的代价很高，尽量少用
               /// ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0), 决定了模糊程度，值越高越模糊
               /// 一般来说，为了防止模糊效果绘制出边界，需要使用ClipRect Widget包裹
