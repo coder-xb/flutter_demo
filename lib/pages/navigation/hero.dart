@@ -34,7 +34,7 @@ class _DetailPage extends StatelessWidget {
         child: Center(
           child: Hero(
             tag: 'imageHero',
-            child: Image.asset('assets/imgs/lake.jpg'),
+            child: Image.asset('assets/images/lake.jpg'),
           ),
         ),
         onTap: () => Navigator.of(context).pop(),

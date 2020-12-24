@@ -17,7 +17,7 @@ class _StartState extends State<StartPage> with SingleTickerProviderStateMixin {
       vsync: this,
       duration: Duration(milliseconds: 3000),
     );
-    _animation = Tween(begin: 0.0, end: 1.0).animate(_controller);
+    _animation = Tween(begin: 0.2, end: 1.0).animate(_controller);
     _animation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         Navigator.of(context).pushAndRemoveUntil(
